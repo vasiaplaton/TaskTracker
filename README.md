@@ -69,3 +69,58 @@ The project is organized into several modules:
 Feel free to explore the API and modify the code to suit your requirements!
 
 # Frontend
+# Frontend Project README
+
+This repository contains the frontend code for a web application built using React. The project is a TaskTracker with features like user authentication, navigation, and interaction with a backend API.
+
+## Technologies Used
+
+- **React**: The project is developed using the React library for building user interfaces. React allows for the creation of reusable UI components, making the code modular and maintainable.
+
+- **React Router**: Navigation within the application is handled using React Router. It enables the creation of a multi-page user experience while maintaining a single-page application feel.
+
+- **Bootstrap**: The project utilizes Bootstrap for styling and layout. Bootstrap provides a responsive and visually appealing design, reducing the need for custom styling.
+
+- **React Bootstrap**: The React Bootstrap library is integrated to use Bootstrap components as React components, facilitating seamless integration with the React application.
+
+## Additional Features and Functionality
+### Authentication and User Management
+The application includes user authentication functionality. The Navibar component manages user login, logout, and displays user-specific information after login.
+
+### Dynamic Content Loading
+The application dynamically loads content based on the selected route, improving user experience.
+
+## Docker Configuration
+
+The project includes a Dockerfile for containerization. It uses the official Node.js image, sets up the working directory, installs dependencies using Yarn, and builds the frontend.
+
+
+## Application Structure
+
+The main application is defined in `App.js`, which includes routing and rendering components based on the URL. The `Navibar` component handles navigation and user authentication.
+
+User authentication is managed with a login modal using React Bootstrap components. The application communicates with the backend API for user authentication and updates the UI accordingly.
+
+## How to Run
+
+1. Clone this repository.
+2. Navigate to the project directory.
+3. Build the Docker image:
+
+    ```bash
+    docker build -t frontend-app .
+    ```
+
+4. Run the Docker container:
+
+    ```bash
+    docker run -p 3000:3000 frontend-app
+    ```
+
+5. Access the application in your browser at [http://localhost:3000](http://localhost:3000).
+
+## Note
+
+Ensure that the backend API is running and accessible at `http://127.0.0.1:8008` for proper functionality.
+
+Feel free to customize the code to fit your specific requirements and styling preferences. Happy coding!
