@@ -1,0 +1,10 @@
+fastapi[all]
+sqlalchemy
+uvicorn
+pydantic
+alembic
+python-dotenv
+python-jose[cryptography]
+passlib[bcrypt]
+python-jose
+fastapi-jwt-auth
